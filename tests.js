@@ -90,3 +90,12 @@ describe('isEven', function () {
         expect(isEven()).toBe(false);
     });
 });
+
+describe('isVowel', function () {
+    it('should be a defined function', function () {
+        expect(typeof isVowel).toBe('function')
+    });
+
+
+    });
+});
