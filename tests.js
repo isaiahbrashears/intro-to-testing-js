@@ -28,18 +28,32 @@ describe('sayHello', function () {
         expect(sayHello('')).toBe('');
     });
     it("should return 'Hello, Jane!' when Jane is passed", function () {
-        expect(sayHello('Jane')).toBe('Hello, Jane!')
+        expect(sayHello('Jane')).toBe('Hello, Jane!');
     });
     it("should return 'Hello, Alex!' when Alex is passed", function () {
-        expect(sayHello('Alex')).toBe('Hello, Alex!')
+        expect(sayHello('Alex')).toBe('Hello, Alex!');
     });
     it("should return 'Hello, Pat!' when Pat is passed", function () {
-        expect(sayHello('Pat')).toBe('Hello, Pat!')
+        expect(sayHello('Pat')).toBe('Hello, Pat!');
     });
     it("should return 'Hello, World!' when true is passed", function () {
-        expect(sayHello(true)).toBe('Hello, World!')
+        expect(sayHello(true)).toBe('Hello, World!');
     });
     it("should return 'Hello, World!' when false is passed", function () {
-        expect(sayHello(false)).toBe('Hello, World!')
+        expect(sayHello(false)).toBe('Hello, World!');
+    });
+});
+describe('isFive', function () {
+    it('should be a defined function', function () {
+        expect(typeof isFive).toBe('function');
+    });
+    it('should return a boolean ', function () {
+        expect(typeof isFive()).toBe('boolean');
+    });
+    it('should return true when passed 5', function () {
+        expect(isFive(5)).toBe(true);
+    });
+    it('should return true when passed "5"', function () {
+        expect(isFive("5")).toBe(true);
     });
 });

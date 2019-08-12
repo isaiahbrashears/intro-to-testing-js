@@ -10,7 +10,17 @@ function sayHello(input) {
        return 'Hello, ' + input +'!';
    }else if(typeof input === 'boolean'){
         return helloWorld();
-    }else {
+    }else if(input === undefined){
        return helloWorld();
+   }else{
+       return false;
    }
+}
+
+function isFive(input) {
+    if (input == 5){
+        return true;
+    }else{
+        return false;
+    }
 }
