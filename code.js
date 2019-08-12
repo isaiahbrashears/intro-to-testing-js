@@ -35,7 +35,9 @@ function isVowel(input) {
 
     if (input === 'a' || input === 'A'){
         return true;
-    }else{
+    }else if(input === 'y'){
+        return false;
+    }else {
         return false;
     }
 
