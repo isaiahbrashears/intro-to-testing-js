@@ -8,7 +8,9 @@ function sayHello(input) {
        return '';
    }else if(typeof input === 'string'){
        return 'Hello, ' + input +'!';
-   }else {
-        return 'Hello';
-    }
+   }else if(typeof input === 'boolean'){
+        return helloWorld();
+    }else {
+       return helloWorld();
+   }
 }
