@@ -98,5 +98,7 @@ describe('isVowel', function () {
     it('should return a boolean', function () {
         expect(typeof isVowel()).toBe('boolean');
     });
-
+    it('should return true if passed "a"', function () {
+        expect(isVowel('a')).toBe(true);
+    });
 });
