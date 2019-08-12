@@ -18,9 +18,15 @@ function sayHello(input) {
 }
 
 function isFive(input) {
-    if (input == 5){
-        return true;
-    }else{
-        return false;
-    }
+    return input == 5;
+}
+
+function isEven(input) {
+   if (isNaN(input) || typeof input === 'boolean'){
+       return false;
+   }else if(input % 2 === 0){
+       return true;
+   }else{
+       return false;
+   }
 }
