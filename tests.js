@@ -113,4 +113,7 @@ describe('isVowel', function () {
     it('should return false when passed "banana"', function () {
         expect(isVowel('banana')).toBe(false);
     });
+    it('should return false when no argument is passed', function () {
+        expect(isVowel()).toBe(false);
+    });
 });
